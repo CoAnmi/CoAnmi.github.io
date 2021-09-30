@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	<canvas id="myCanvas" width="300" height="300"></canvas>
+	<script type="text/javascript">
+		x =25;
+		y =25;
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		//绘制矩形
+		function drawCharactor(x,y){
+			ctx.clearRect(0, 0, 600, 600);
+	  		ctx.beginPath();
+	  		ctx.arc(x,y,25,0,Math.PI*2);
+	 		ctx.fillStyle='#98adf0';
+	  		ctx.fill();
+	  		ctx.save();
+			}
+		var cs = true 
+		var animate = function(){
+			//判断移动方向
+			if (y <= 25) cs = true;
+			if (y >= 275) cs = false;
+			if (cs){
+				speed = y / 50;
+				y = y + speed;
+			}else{
+				speed = - y / 50;
+				y = y + speed;
+			}
+			drawCharactor(x,y);
+			requestAnimationFrame(animate);
+		}
+		requestAnimationFrame(animate);
+	</script>
+	</body>
+</html>
+
