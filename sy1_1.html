@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息注册</title>
+    <style type="text/css">
+        p {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #box {
+            margin: 0 auto;
+            width: 505px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>学生信息注册<p>
+            <div id="box">
+                <form>
+                    姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：
+                    <input name="stuName" type="text">
+                    <br><br>
+                    性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：
+                    <input name="stuSex" type="radio" value="male">男
+                    <input name="stuSex" type="radio" value="female">女
+                    <br><br>
+                    出生日期：
+                    <input name="stuBirthday" type="text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按格式yyyy-mm-dd
+                    <br><br>
+                    学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校：
+                    <input name="stuSchool" type="text">
+                    <br><br>
+                    学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;院：
+                    <select name="stuCollege">
+                        <option>水利学院
+                        <option>电力学院
+                        <option>信息工程学院
+                    </select>
+                    <br><br>
+                    专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：
+                    <select name="stuMajor">
+                        <option>计算机科学与技术
+                        <option>软件工程
+                        <option>网络工程
+                    </select>
+                    <br><br>
+                    账号名称：
+                    <input name="stuUsername" type="text">
+                    <br><br>
+                    邮箱名称：
+                    <input name="stuMailbox" type="text">
+                    <br><br>
+                    密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：
+                    <input name="stuPassword" type="password">
+                    <br><br>
+                    上传照片：
+                    <input name="stuPhoto" type="file">
+                    <br><br>
+                    个人介绍：
+                    <textarea name="stuIntroduction" rows="4" cols="20"></textarea>
+                    <br><br>
+                    <input name="stuSubmit" type="submit" value="注册">
+                    <input name="stuReset" type="reset" value="取消">
+                </form>
+            </div>
+</body>
+
+</html>
