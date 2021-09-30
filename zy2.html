@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>作业2</title>
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            var a=1;
+            $(document).ready(function(){
+                $("tr:eq(0)").css({background:"blue"});
+                $("tr:gt(0):even").css("background","red");
+                $("tr:gt(0):odd").css("background","yellow");
+                $("#button").click(function(){
+                    var num = $(":checkbox[name='x']:checked").length;
+                    alert("已选中"+ num +"个。");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>给网页中所有的p元素添加onclick事件</h1>
+        <p>第一段</p>
+        <p>第二段</p>
+        <script type="text/javascript">
+            window.onload = function() {
+                var items = document.getElementsByTagName("p");
+                for(var i = 0; i < items.length; i++) {
+                    items[i].onclick = function() {
+                        alert("201815408乔文峰");
+
+                    }
+                }
+
+            };
+        </script>
+
+
+        <h1>为表格设置隔行变色效果</h1>
+        <table border="1">
+                <tr><td>第一行</td><td>第一行</td></tr>
+                <tr><td>第二行</td><td>第二行</td></tr>
+                <tr><td>第三行</td><td>第三行</td></tr>
+                <tr><td>第四行</td><td>第四行</td></tr>
+                <tr><td>第五行</td><td>第五行</td></tr>
+                <tr><td>第六行</td><td>第六行</td></tr>
+        </table>        
+
+        <h1>判断多选框选中数量</h1>
+        <input type="checkbox" name="x" >
+        <input type="checkbox" name="x" >
+        <input type="checkbox" name="x" >
+        <input type="checkbox" name="x" >
+        <input type="checkbox" name="x" >
+        <br><br>
+        <button id="button">点击显示勾选个数</button>
+    </body>
+
+</html>
