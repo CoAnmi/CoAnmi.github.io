@@ -10,34 +10,25 @@
             var rgb=$("tr:even").css("backgroundColor")
 
             $("#bt1").click(function(){
-                $("p:first").css("backgroundColor","#ff0000")//修改第一个p标签背景
+                $("p:first").css("backgroundColor","#ff0000")  //修改第一个p标签背景
             });
             $("#bt2").click(function(){
-                $("p#p2").hide(500);//隐藏第二个p标签
-            });
-            $("#bt3").click(function(){
-                $("p:eq(2)").show(500)//显示第三个p标签
-                // $("p:hidden").show(500)
-            });
-            $("#bt4").click(function(){
-                $("p:gt(2)").text("修改后");//修改第四个p标签
+                $("p#p2").hide(500);  //隐藏第二个p标签
             });
 
             var i=0;
             $("#biao").click(function(){
                 i++;
                 if(i % 2){
-                    $("tr:even").css("backgroundColor","#ff0000")//单次点击修改背景
+                    $("tr:even").css("backgroundColor","#ff0000")  //单次点击修改背景
                 }else{
-                    $("tr:even").css("backgroundColor",rgb)//再次点击恢复原本背景
+                    $("tr:even").css("backgroundColor",rgb)  //再次点击恢复原本背景
                 }
             });
 
             $("#duo").click(function(){
-                var obj = document.getElementById("ss");
                 var num = $( ":checkbox[name='duoxuan']:checked").length;
-                obj.innerText= "当前选中个数为"+ num +"个。";
-                $("#ss").show(500);
+                window.confirm("当前选中个数为"+ num +"个。");
             });
         });
     </script>
@@ -48,13 +39,9 @@
     <div>
         <p id="p1">改变背景颜色</p>
         <p id="p2">隐藏文本1</p>
-        <p id="p3" hidden>显示文本2</p>
-        <p id="p4">修改该文本</p>
     </div>
     <button id="bt1">修改背景</button>
     <button id="bt2">隐藏</button>
-    <button id="bt3">显示</button>
-    <button id="bt4">修改</button>
 
 
     <h2>为表格设置隔行变色效果</h2>
@@ -95,7 +82,6 @@
     <input type="checkbox" name="duoxuan" value="test4">test4
     <input type="checkbox" name="duoxuan" value="test5">test5
     <br>
-    <p id="ss" hidden="hidden">ddd</p>
     <button id="duo">点击显示勾选个数</button>
 
 </body>
