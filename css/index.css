@@ -1,0 +1,469 @@
+
+/* nav开始 */
+.nav{
+	/* 父相子绝，父亲设置成相对 */
+    position: relative;
+    height: 50px;
+    border-bottom: 2px solid #b1191a;
+}
+.nav-left{
+	/* 这是全部商品分类的那个大红块 */
+    height: 50px;
+}
+.nav-left .title{
+	/* “全部商品分类” 这几个字对应的小红快*/
+    width: 210px;
+    height: 50px;
+	/* 背景为深红色 */
+    background-color: #b1191a;
+    color: white;
+	/* 文字水平居中 */
+    text-align: center;
+	/* line-height和height相等，垂直居中 */
+    line-height: 50px;
+	/* 把 font-size 设置为设置为一个固定的值，也就是这几个字的大小 */
+    font-size: 16px;
+}
+.nav-left .content{
+	/* 下面所有商品的大红条，和title一样宽 */
+    position: relative;
+    width: 210px;
+	/* 下面每个小红条高度是30，一共15个红条，还有2px的上外边距，一共是465 */
+    height: 465px;
+	/* 设置上外边距的大小 */
+    margin-top: 2px;
+	/* 稍微浅一点的红色 */
+    background-color: #c81623;
+}
+.nav-left .content li{
+	/* 每一种商品的小红条 */
+    /* position: relative; */
+    height: 30px;
+	/* 左内边距为10px */
+    padding-left: 10px;
+    background-color: #c81623;
+    color: white;
+	/* 垂直居中 */
+    line-height: 30px;
+	/* 设置过渡效果（鼠标放上去会移动一点），对所有的元素都起作用，时间0.5s，过渡效果曲线是ease*/
+    transition: all 0.5s ease;
+}
+.content .goods_detail_left{
+	/* 每种商品分类详情里面的黑色小块 */
+	/* 设置元素不显示 */
+    display: none;
+	/* 绝对定位 */
+    position: absolute;
+    top: 0;
+	/* 弹出框的左边距，要在红框外面，红框是210，所以这个也是210 */
+    left: 210px;
+    width: 990px;
+    height: 465px;
+	/* 设置四周的内边距都是20px */
+    padding: 20px;
+    background-color: #fff;
+	/* 添加白框四周的阴影效果 ，rgba(0, 0, 0, 0.3)是0.3透明黑色*/
+    box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.3);
+   /* 带有指定宽度和高度的框，并把边框和内边距放入框中，也就是说把框放到里面 */
+   /* https://blog.csdn.net/lengyue1084/article/details/82191095这篇博客有详解 */
+	box-sizing: border-box;
+}
+.goods_detail_left.a{
+	/* 那些字的样式 */
+	/* 此元素将显示为块级元素，此元素前后会带有换行符 */
+    display: block;
+    float: left;
+    height: 30px;
+    padding: 2px 5px;
+    margin-right: 10px;
+    background-color: #000;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+/* 设置鼠标悬浮时的效果 */
+.goods_detail_left.a:hover{
+    background-color: red;
+}
+.goods_detail_left dl{
+	/* 各种品牌的上边距 */
+    margin-top: 50px;
+}
+.goods_detail_left dt,.goods_detail_left dd{
+    float: left;
+}
+.goods_detail_left dd{
+    margin-right: 20px;
+}
+/* 鼠标悬浮的时候，背景色变成白色，字体变成红色 */
+.content li:hover{
+    padding-left: 20px;
+    background-color: #fff;
+    color: #c81623;
+}
+.content li:hover.a{
+	/* 鼠标放上去的时候字体变成红色 */
+    color: #c81623;
+}
+.nav-left li.a{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+/* 上面服装城，美妆馆等区域 */
+.nav_right{
+	/* 绝对布局 */
+    position: absolute;
+    bottom: 10px;
+    left: 250px;
+	/* 调整这些字所在单元的位置 */
+    margin-left: 200px;
+}
+.nav_right li{
+    float: left;
+	/* 这几个字之间的间距 */
+    margin-right: 50px;
+}
+.nav_right li a{
+	/* 这几个字的颜色和大小 */
+    color: #666;
+    font-size: 18px;
+}
+.nav_right li a:hover{
+	/* 鼠标放上去的时候变成红色 */
+    color: red;
+}
+/* nav 结束 */
+
+/* banner开始 */
+.banner{
+    height: 455px;
+    padding: 10px 0 0 0;
+}
+.banner .main{
+    position: relative;
+    height: 455px;
+    margin-left: 220px;
+}
+.main .swiper{
+	/* 不设置这个,特惠秒杀那个区域会整个下去,不会和轮播图一排 */
+    float: left;
+}
+.main .swiper li{
+    float: left;
+}
+.main .swiper ul{
+	
+    width: 3610px;
+}
+.main .swiper{
+	/* 轮播图板块的大小 */
+    position: relative;
+    width: 721px;
+    height: 455px;
+    overflow: hidden;
+}
+.main .swiper img{
+	/* 此元素将显示为块级元素，此元素前后会带有换行符 */
+    display: block;
+}
+.swiper .arrow_left{
+	/* 轮播图点击向左回到上一张图片 */
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 22px;
+    height: 32px;
+    background: url('../img/arrow-prev.png') no-repeat;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.swiper .arrow_right{
+	/* 轮播图点击向右去往下一张图片 */
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 22px;
+    height: 32px;
+    background: url('../img/arrow-next.png') no-repeat;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.swiper ol{
+	/* 四张轮播图下面的四个圆点所在的单位*/
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+.swiper ol li{
+	/* 四张轮播图下面的四个圆点自身设置*/
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: #fff;
+	/* 向div元素添加圆角边框, 没有这句话的话式四个小方块*/
+    border-radius: 50%;
+	/* 放上去之后指针变成手形 */
+    cursor: pointer;
+}
+#swiper1{
+	/* #可以按照id进行选择 */
+	/* 绝对定位 */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.newsflash{
+	/* 特惠秒杀那个大框 */
+    float: right;
+    overflow: hidden;
+    width: 250px;
+    height: 453px;
+    border: 1px solid #ccc;
+}
+.newsflash_top h3{
+	/* "特惠秒杀"和"更多"两个部分的格式 */
+    padding: 5px 10px;
+	/* dash是虚线 */
+    border-bottom: 1px dashed #9d9d9d;
+    font-size: 16px;
+    font-weight: 400;
+}
+.newsflash_top h3 a{
+	/* "更多"这两个字右浮 */
+    float: right;
+    font-size: 13px;
+}
+.newsflash_top h3 a:hover{
+	/* 鼠标放上去之后颜色变成红色 */
+    color: #c81623;
+}
+.newsflash_top h3 i{
+	/* 更多两个字后面的'>' */
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 2px;
+}
+.newsflash_top .news_content{
+	/* 下面的几个[特惠] */
+    padding: 5px 15px;
+}
+.news_content li{
+	/* 下面的几个[特惠] */
+    margin-bottom: 5px;
+}
+.newsflash_center{
+	/* 话费机票什么的整个容器 */
+    width: 255px;
+    border-bottom: 1px solid #9d9d9d;
+    text-align: center;
+}
+.newsflash_center li{
+	/* 每个小方格 */
+    position: relative;
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-top: 1px solid #9d9d9d;
+    border-right: 1px solid #9d9d9d;
+}
+.newsflash_center li div{
+	/* 那些花费,机票等的图标 */
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 26px;
+    height: 28px;
+    background: url('../img/icons.png') no-repeat -19px -15px;
+    transform: translateX(-50%);
+}
+.newsflash_center li a{
+	/* 话飞机票那几个字 */
+    line-height: 98px;
+	/* 对齐上面的图标 */
+    margin-left: -6px;
+}
+.newsflash_bottom{
+	/* 下面的那个小广告的图片 */
+    margin-top: 5px;
+}
+.newsflash_bottom img{
+	/* 显示为块状元素 */
+    display: block;
+}
+/* banner结束 */
+/* 推荐模块开始 */
+.recommend{
+	/* 推荐模块整个模块的高度 */
+    height: 143px;
+    margin-top: 10px;
+}
+.recommend_title{
+	/* 题目的设置 */
+    float: left;
+    width: 208px;
+    height: 143px;
+    background-color: #5c5251;
+	/* 水平居中 */
+    text-align: center;
+    font-size: 26px;
+    color: white;
+}
+.recommend_title i{
+	/* 中间那个购物车和相关的字的格式 */
+	/* 显示为行内块 
+	和相邻行内元素在同一行，但是之间会有空白缝隙。
+	默认宽度是他本身内容的宽度。宽度、高度、行高、
+	外边距以及内边距都可以手动设置*/
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.recommend_content li{
+	/* 四个广告的样式 */
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 247px;
+}
+.recommend_content .line{
+	/* 处理一下这个块和下面的元素的空白区域 */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: 0;
+    height: 110px;
+	/* 实现元素垂直居中 */
+    transform: translateY(-50%);
+}
+/* 推荐模块结束 */
+
+/* 楼层模块开始 */
+.floor_one{
+    margin-top: 20px;
+}
+.floor_one_title{
+    padding: 2px 0px;
+    border-bottom: 2px solid #c81623;
+}
+.floor_one_title h3{
+	/* "整点秒杀"这几个字 */
+    float: left;
+    color: #c81623;
+    font-size: 20px;
+}
+.floor_one_title ul{
+    float: right;
+    margin-top: 5px;
+}
+.floor_one_title li{
+    float: left;
+}
+.floor_one_title li:first-child a{
+	/* li元素中的第一个孩子,也就是"热门"*/
+    color: #c81623;
+}
+.floor_one_title .line{
+    margin: 2px 16px 0;
+}
+.floor_one_content_left{
+	/* 整点秒杀下面的手机电脑,蓝牙耳机什么的那一块 */
+    float: left;
+    width: 210px;
+    background-color: #fbfbfb;
+}
+.floor_one_content_left .head li{
+	/* 手机电脑,蓝牙耳机这几个字 */
+    float: left;
+    width: 90px;
+    padding: 8px 0;
+    margin-left: 8px;
+    border-bottom: 1px solid #9d9d9d;
+    text-align: center;
+}
+.floor_one_content_left .body{
+	/* 精灵球充电宝那个图居中 */
+    text-align: center;
+}
+.floor_one_content_left .body a{
+	/* 那个图本身的设置 */
+    display: block;
+    overflow: hidden;
+    width: 180px;
+}
+/* 下面是旁边的那几个广告的图片 ----开始*/
+.floor_one_content_left .body a:hover img{
+	/* 鼠标放到图片上的时候,图片左移 */
+    margin-left: -7px;
+}
+.floor_one_content_center{
+    float: left;
+    overflow: hidden;
+    width: 320px;
+}
+.floor_one_content_center:hover img{
+    transform: translateX(-9px);
+}
+.floor_one_content_right{
+    float: right;
+    width: 670px;
+}
+/* .floor_one_content_right ul{
+    border-right: 1px solid #9d9d9d;
+} */
+.floor_one_content_right li{
+    float: left;
+    overflow: hidden;
+    width: 222px;
+}
+.floor_one_content_right li a{
+    display: block;
+    padding-left: 2px;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid #9d9d9d;
+}
+.floor_one_content_right a:hover{
+    margin-left: -10px;
+}
+.floor_one_content_right li{
+    border-right: 1px solid #9d9d9d;
+}
+/* 下面是旁边的那几个广告的图片 ----结束*/
+/* 楼层模块结束 */
+
+
+/* 右侧边栏开始 */
+.aside_right{
+	/* 右侧边栏的整体 */
+    position: absolute;
+    top: 674px;
+    right: 30px;
+    border: 1px solid red;
+}
+.aside_right li a{
+	/* 每个小方块中的东西 */
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-bottom: 1px solid red;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    box-sizing: border-box;
+}
+.aside_right li i{
+	/* 文字斜体部分 */
+    margin-left: 0px;
+}
+.aside_right ul li:last-child{
+    border-bottom: none;
+}
+.aside_right li:hover a{
+    background-color: red;
+    color: white;
+}
+/* 右侧边栏结束 */

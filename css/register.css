@@ -1,0 +1,184 @@
+/* 头部开始 */
+.register_header .logo a{
+    display: block;
+    width: 175px;
+    height: 56px;
+    /*background-color:#b1191a;*/
+    background-color: #ffffff;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    line-height: 56px;
+}
+.register_header{
+    padding: 20px 0;
+    border-bottom: 2px solid #c40000;
+}
+/* 头部结束 */
+/* main开始 */
+.main_header{
+    height: 40px;
+    margin-top: 30px;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+}
+.main_header h3{
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #666;
+}
+.main_header p{
+    float: right;
+    height: 40px;
+    padding-right: 10px;
+    line-height: 40px;
+}
+.main_header p a{
+    color: #c40000;
+}
+.main{
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.main_content{
+    height: 480px;
+}
+.main_content table{
+    border-collapse: collapse;
+    margin: 30px 0 0 400px;
+}
+.main_content table tr{
+    height: 60px;
+}
+.main_content table tr td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.main_content .txt{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#read{
+    vertical-align: middle;
+}
+.main_content table em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    font-style: normal;
+    vertical-align: middle;
+}
+#getCode{
+    display: block;
+    width: 250px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+}
+.main_content #grade{
+    display: inline-block;
+    width: 120px;
+    height: 10px;
+    border: 1px solid #ccc;
+}
+.main_content tr:nth-child(5){
+    height: 20px;
+}
+.grade1{
+    background-color: red;
+    width:40px;
+    height: 10px;
+}
+.grade2{
+    background-color: orange;
+    width: 80px;
+    height: 10px;
+}
+.grade3{
+    background-color: green;
+    width: 120px;
+    height: 10px;
+}
+.main_content tr:nth-child(7) a{
+    color: skyblue;
+}
+.main_content tr:last-child button{
+    width: 200px;
+    height: 40px;
+    background-color: #c40000;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    border: none;
+}
+.main_content tr:nth-child(4) section{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+}
+.main_content tr:nth-child(4) b{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/close.png') no-repeat;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.main_content tr:nth-child(6) div{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+}
+.main_content tr:nth-child(6) b{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/close.png') no-repeat;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+/* main结束 */
+/* footer开始 */
+.footer_bottom li {
+    float: left;
+}
+
+.footer_bottom .line {
+    width: 1px !important;
+    height: 12px;
+    margin: 9px 5px 0;
+    background-color: black;
+    margin-top: 3px;
+}
+
+.footer_bottom ul {
+    display: inline-block;
+}
+
+.footer_bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer_bottom p:last-child {
+    padding-bottom: 30px;
+}
+
+/* footer结束 */

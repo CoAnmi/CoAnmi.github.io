@@ -1,0 +1,451 @@
+/* 公用样式 */
+/* 字体图标样式 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+        url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+        url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 版心的样式 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 设置icomoon */
+i {
+    margin-left: 4px;
+    font-style: normal;
+    font-family: 'icomoon';
+}
+
+dd {
+    font-family: 'icomoon';
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: '';
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 分割线样式 */
+.line {
+    width: 1px !important;
+    height: 12px;
+    margin: 9px 5px 0;
+    background-color: black;
+}
+
+/* 三角形样式 */
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+    line-height: 0;
+    font-size: 0;
+}
+
+/* 左浮动 */
+.fl {
+    float: left;
+}
+
+/* 右浮动 */
+.fr {
+    float: right;
+}
+
+/* 过渡 */
+.tst {
+    transition: all 0.5s ease;
+}
+
+/*公用样式*/
+
+/* 快捷导航开始 */
+.shortcut {
+    height: 30px;
+    background-color: #f1f1f1;
+    line-height: 30px;
+}
+
+.shortcut li {
+    float: left;
+}
+
+.shortcut .shortcut_left {
+    float: left;
+}
+
+.shortcut .register {
+    margin-left: 4px;
+    color: red;
+}
+
+.shortcut .shortcut_right {
+    float: right;
+}
+
+.shortcut_right li {
+    position: relative;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.shortcut_right .my_pyg {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 300px;
+    box-shadow: 0px 1px 6px -2px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+.my_pyg li {
+    width: 140px;
+    padding: 0px 0 0px 10px;
+}
+
+.my_pygTop {
+    border-bottom: 1px solid #ccc;
+}
+
+/* 快捷导航结束 */
+
+/* 头部开始 */
+.header {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    /*background-color:#b1191a;*/
+    background-color: #ffffff;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    line-height: 56px;
+}
+
+.logo,
+.search {
+    float: left;
+    margin-top: 20px;
+}
+
+.search {
+    margin-left: 100px;
+}
+
+.search input {
+    float: left;
+    width: 458px;
+    height: 41px;
+    padding-left: 10px;
+    border: 2px solid #b1191a;
+    outline: none;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 45px;
+    border: none;
+    background-color: #b1191a;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 45px;
+    outline: none;
+}
+
+.search li {
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.search li:first-child a {
+    color: red;
+}
+
+.shopcar {
+    float: right;
+    position: relative;
+    width: 150px;
+    height: 45px;
+    padding: 10px 0;
+    margin-right: 130px;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 25px;
+    box-sizing: border-box;
+}
+
+.shopcar a {
+    margin-left: 5px;
+}
+
+.shopcar .number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: red;
+    line-height: 15px;
+    color: white;
+}
+
+/* 头部结束 */
+/* nav开始 */
+.nav {
+    position: relative;
+    height: 50px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav-left {
+    height: 50px;
+}
+
+.nav-left .title {
+    width: 210px;
+    height: 50px;
+    background-color: #b1191a;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.nav-left .content {
+    position: relative;
+    width: 210px;
+    height: 465px;
+    margin-top: 2px;
+    background-color: #c81623;
+}
+
+.nav-left .content li {
+    /* position: relative; */
+    height: 30px;
+    padding-left: 10px;
+    background-color: #c81623;
+    color: white;
+    line-height: 36px;
+    transition: all 0.5s ease;
+}
+
+.content .goods_detail_left {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 210px;
+    width: 990px;
+    height: 465px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.goods_detail_left>a {
+    display: block;
+    float: left;
+    height: 30px;
+    padding: 2px 5px;
+    margin-right: 10px;
+    background-color: #000;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+.goods_detail_left>a:hover {
+    background-color: red;
+}
+
+.goods_detail_left dl {
+    margin-top: 50px;
+}
+
+.goods_detail_left dt,
+.goods_detail_left dd {
+    float: left;
+}
+
+.goods_detail_left dd {
+    margin-right: 20px;
+}
+
+.content li:hover {
+    padding-left: 20px;
+    background-color: #fff;
+    color: #c81623;
+}
+
+.content li:hover>a {
+    color: #c81623;
+}
+
+/* .nav-left .content i{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 15px;
+    font-weight: 600;
+}  */
+.nav-left li>a {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.nav_right {
+    position: absolute;
+    bottom: 10px;
+    left: 250px;
+    margin-left: 200px;
+}
+
+.nav_right li {
+    float: left;
+    margin-right: 50px;
+}
+
+.nav_right li a {
+    color: #666;
+    font-size: 18px;
+}
+
+.nav_right li a:hover {
+    color: red;
+}
+
+/* nav 结束 */
+/* footer开始 */
+.footer {
+    background-color: #f5f5f5;
+}
+
+.footer_top {
+    padding: 30px 0 30px 20px;
+}
+
+.footer_top li {
+    float: left;
+    width: 236px;
+    height: 54px;
+}
+
+.footer_top li div {
+    float: left;
+    width: 54px;
+    height: 54px;
+    background: url('../img/icons.png') no-repeat -252px 0;
+    line-height: 54px;
+}
+
+.footer_top li p {
+    margin: 5px 60px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}
+
+.footer_top li span {
+    margin-left: 6px;
+}
+
+.footer_top li:nth-child(2) div {
+    background-position: -252px -52px;
+}
+
+.footer_top li:nth-child(3) div {
+    background-position: -252px -103px;
+}
+
+.footer_top li:nth-child(4) div {
+    background-position: -252px -155px;
+}
+
+.footer_top li:nth-child(5) div {
+    background-position: -252px -207px;
+}
+
+.footer_top {
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.footer_center {
+    padding: 20px 40px;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.footer_center dt,
+.footer_center dd {
+    margin-bottom: 3px;
+}
+
+.footer_center dt {
+    color: #000;
+    font-size: 16px;
+}
+
+.footer_center dl {
+    float: left;
+    width: 186px;
+}
+
+.footer_center dl:last-child {
+    text-align: center;
+}
+
+.footer_bottom li {
+    float: left;
+}
+
+.footer_bottom .line {
+    margin-top: 3px;
+}
+
+.footer_bottom ul {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer_bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer_bottom p:last-child {
+    padding-bottom: 30px;
+}
+
+/* footer结束 */

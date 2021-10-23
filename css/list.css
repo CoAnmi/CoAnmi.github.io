@@ -1,0 +1,193 @@
+/* 秒杀开始 */
+.header_top .sk{
+    display: block;
+    width: 56px;
+    height: 26px;
+    padding: 10px;
+    background: url('../upload/sk.png') no-repeat 10px 10px;
+}
+.header_top .seckill{
+    float: left;
+    margin-top: 36px;
+    margin-left: 10px;
+    border-left: 1px solid #c81523;
+}
+/* 秒杀结束 */
+/* nav开始 */
+.nav{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c81523;
+}
+.nav ul:first-child{
+    float: left;
+}
+.nav ul:last-child{
+    float: right;
+}
+.nav ul:first-child li{
+    float: left;
+    margin-right: 50px;
+}
+.nav ul:first-child a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav ul:last-child li{
+    float: left;
+    margin-right: 50px;
+}
+.nav ul:last-child a{
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+}
+.nav ul a:hover{
+    color: #c81523;
+}
+.nav ul:last-child .current{
+    color: #c81523;
+}
+/* nav结束 */
+/* banner开始 */
+.banner{
+    height: 120px;
+    background: url('../upload/bg_03.png') no-repeat;
+}
+/* banner结束 */
+
+/* 商品列表开始 */
+.shoplist .sk_goods{
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+.shoplist .sk_goods:hover a{ 
+    border: 1px solid red;
+}
+.shoplist .sk_goods a{
+    display: block;
+    overflow: hidden;
+    width: 283px;
+    height: 460px;
+    border: 1px solid transparent;
+}
+.shoplist .sk_goods a:hover{
+    color: '#000' !important;
+}
+.shoplist .sk_goods:nth-child(4n){
+    margin-right: 0;
+}
+.shoplist ul{
+    margin-top: 30px;
+}
+.shoplist .shoplist_details{
+    padding: 0 0 0 10px;
+    font-size: 14px;
+}
+.shoplist .shoplist_price{
+    padding: 10px 10px 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+.shoplist .shoplist_price span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    text-decoration: line-through;
+}
+.shoplist_number .progress_bar{
+    display: inline-block;
+}
+.shoplist_number{
+    padding: 0 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.percentage,.surplus{
+    color: red;
+}
+.progress_bar{
+    overflow: hidden;
+    width: 130px;
+    height: 15px;
+    border: 1px solid red;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+.progress_bar div{
+    width: 87%;
+    height: 15px;
+    background-color: red;
+}
+.buy{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #c81523;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+}
+.shoplist .page{
+    margin-top: 20px;
+}
+.shoplist .page li{
+    float: left;
+    margin-right: 5px;
+}
+.shoplist .page a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #f7f7f7;
+    border: 1px solid #666;
+    text-align: center;
+    line-height: 40px;
+}
+.shoplist .page ul{
+    display: inline-block;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+.shoplist .page{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.shoplist .page li:first-child a{
+    width: 84px;
+    height: 40px;
+}
+.shoplist .page li:last-child a{
+    width: 84px;
+    height: 40px;
+}
+.shoplist .page .current{
+    border: none;
+    background-color: #fff;
+}
+.shoplist .page .jump{
+    display: inline-block;
+}
+#pageNumber{
+    width: 50px;
+    height: 40px;
+    border: 1px solid #666;
+    text-align: center;
+    outline: none;
+}
+.page button{
+    width: 50px;
+    height: 40px;
+    background-color: #f7f7f7;
+    border: 1px solid #666;
+    outline: none;
+}
+
+/* 商品列表结束 */

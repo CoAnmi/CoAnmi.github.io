@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>开心购的店</title>
+    <meta name="description"
+        content="开心购的店-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!">
+    <meta name="Keywords" name="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- Jquery是控制主页的所有较大的图片的 -->
+    <script src="js/jquery/jquery-3.4.1.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/aniamte.js"></script>
+</head>
+
+<body>
+    <!-- 顶部快捷导航开始 -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="shortcut_left">
+                <ul>
+                    <li>Welcome！</li>
+                    <li>
+                        <a href="./module/login.html">请登录</a>
+                        <a href="#" class="register">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="shortcut_right">
+                <ul>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="line"></li>
+                    <li class="drop_down_mypyg">
+                        <a href="#">我的关注</a><i></i>
+                        <div class="my_pyg">
+                            <div class="my_pygTop">
+                                <ul class="clearfix">
+                                    <li><a href="#">待处理订单</a></li>
+                                    <li><a href="#">消息</a></li>
+                                    <li><a href="#">返修退换货</a></li>
+                                    <li><a href="#">我的问答</a></li>
+                                    <li><a href="#">降价商品</a></li>
+                                    <li><a href="#">我的关注</a></li>
+                                </ul>
+                            </div>
+                            <div class="my_pygBottom">
+                                <ul>
+                                    <li><a href="#">我的金币</a></li>
+                                    <li><a href="#">我的优惠券</a></li>
+                                    <li><a href="#">我的专享折扣</a></li>
+                                    <li><a href="#">我的理财</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="line"></li>
+                    <li><a href="#">会员</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">团购</a></li>
+                    <li class="line"></li>
+                    <li class="drop_down"><a href="#">关注网站</a><i></i></li>
+                    <li class="line"></li>
+                    <li class="drop_down"><a href="#">客户服务</a><i></i></li>
+                    <li class="line"></li>
+                    <li class="drop_down"><a href="#">网站导航</a><i></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部快捷导航结束 -->
+    <!-- 头部开始 -->
+    <div class="header w">
+        <div class="header_top clearfix">
+            <div class="logo">
+                <h1>
+                    <a href="index.html" title="开心购的店"><img src="./upload/logo.png"  alt="开心购logo" /></a>
+                </h1>
+            </div>
+            <div class="search">
+				<!-- placeholder是搜索框里面默认显示的字,随着输入会消失 -->
+                <input type="text" id="search" placeholder="iphone12">
+                <button id="search_btn">搜索</button>
+                <ul>
+                    <li><a href="#">优惠购首发</a></li>
+                    <li><a href="#">百亿补贴</a></li>
+                    <li><a href="#">9.9元团购</a></li>
+                    <li><a href="#">每满99减3元</a></li>
+                    <li><a href="#">办公用品</a></li>
+                    <li><a href="#">电脑</a></li>
+                    <li><a href="#">通信</a></li>
+                </ul>
+            </div>
+            <div class="shopcar">
+                <i></i>
+                <a href="#" class="mycar">
+                    我的购物车
+                    <div class="number">0</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- nav 开始  nav是全部商品分类界面-->
+    <div class="nav">
+        <div class="w">
+            <div class="nav-left">
+                <div class="title">
+                    全部商品分类
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="#">家用电器</a>
+                            <div class="goods_detail_left">
+                                <a href="#">天天5折<i></i></a>
+                                <a href="#">家电馆<i></i></a>
+                                <a href="#">家电专卖店<i></i></a>
+                                <a href="#">家电服务<i></i></a>
+                                <a href="#">企业采购<i></i></a>
+                                <a href="#">商用电器<i></i></a>
+                                <a href="#">以旧换新<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>电视</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">超薄电视</a></dd>
+                                    <dd><a href="#">液晶电视</a></dd>
+                                    <dd><a href="#">4K画质</a></dd>
+                                    <dd><a href="#">小米精选</a></dd>
+                                    
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="phone">手机、</a>
+                            <a href="#">数码、</a>
+                            <a href="#">通信</a>
+                            <div class="goods_detail_left">
+                                <a href="#">手机频道<i></i></a>
+                                <a href="#">网上营业厅<i></i></a>
+                                <a href="#">配件频道<i></i></a>
+                                <a href="#">影视数码<i></i></a>
+                                <a href="#">交流CLUB<i></i></a>
+								<!-- dl定义一个list（列表，用来显示元素） -->
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>品牌型号</dt>
+                                    <dd></dd>
+                                    <dd><a href="./module/detail.html">iphone12</a></dd>
+                                    <dd><a href="./module/detail-iPhone11.html">iphone11</a></dd>
+                                    <dd><a href="./module/detail_xiaomi.html">小米</a></dd>
+                                    <dd><a href="./module/detail_redmi.html">红米</a></dd>
+                                    <dd><a href="./module/detail-华为.html">华为</a></dd>
+                                    <dd><a href="./module/detail-荣耀.html">荣耀</a></dd>
+                                    <dd><a href="./module/detail-vivo.html">vivo</a></dd>
+                                    <dd><a href="./module/detail-OPPO.html">OPPO</a></dd>
+                                    <dd><a href="./module/detail-OnePlus.html">Oneplus</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">电脑、</a>
+                            <a href="#">办公</a>
+                            <div class="goods_detail_left">
+                                <a href="#">畅销榜<i></i></a>
+                                <a href="#">电脑选购<i></i></a>
+                                <a href="#">品牌一览<i></i></a>
+                                <a href="#">外设购买<i></i></a>
+                                <a href="#">笔记本热销<i></i></a>
+                                <a href="#">台式一体机<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>品牌/功能</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">轻薄本</a></dd>
+                                    <dd><a href="#">商务本</a></dd>
+                                    <dd><a href="#">游戏本</a></dd>
+                                    <dd><a href="#">Macbook</a></dd>
+                                    <dd><a href="#">小米</a></dd>
+                                    <dd><a href="#">华为</a></dd>
+                                    <dd><a href="#">联想</a></dd>
+                                    <dd><a href="#">Dell</a></dd>
+                                    <dd><a href="#">神舟</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">家具、</a>
+                            <a href="#">家居、</a>
+                            <a href="#">家装、</a>
+                            <a href="#">厨具</a>
+                            <div class="goods_detail_left">
+                                <a href="#">大厂直销<i></i></a>
+                                <a href="#">原木家具<i></i></a>
+                                <a href="#">收纳神器<i></i></a>
+                                <a href="#">家具套装<i></i></a>
+                                <a href="#">复古西式<i></i></a>
+                                <a href="#">传统中式<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>家具选购</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">真皮沙发</a></dd>
+                                    <dd><a href="#">榻榻米</a></dd>
+                                    <dd><a href="#">红木茶几</a></dd>
+                                    <dd><a href="#">床</a></dd>
+                                    <dd><a href="#">梨花木餐桌</a></dd>
+                                    <dd><a href="#">办公桌</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">男装、</a>
+                            <a href="#">女装、</a>
+                            <a href="#">童装、</a>
+                            <a href="#">内衣</a>
+                            <div class="goods_detail_left">
+                                <a href="#">品牌特卖<i></i></a>
+                                <a href="#">春秋爆款<i></i></a>
+                                <a href="#">潮男潮女<i></i></a>
+                                <a href="#">大牌选购<i></i></a>
+                                <a href="#">当下流行<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>品牌特惠</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">阿迪达斯</a></dd>
+                                    <dd><a href="#">优衣库</a></dd>
+                                    <dd><a href="#">花花公子</a></dd>
+                                    <dd><a href="#">杰克琼斯</a></dd>
+                                    <dd><a href="#">骆驼</a></dd>
+                                    <dd><a href="#">海澜之家</a></dd>
+                                    <dd><a href="#">特步</a></dd>
+                                    <dd><a href="#">安踏</a></dd>
+                                    <dd><a href="#">李宁</a></dd>
+                                    <dd><a href="#">森马</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">化妆品、</a>
+                            <a href="#">清洁用品</a>
+                            <div class="goods_detail_left">
+                                <a href="#">补水必备<i></i></a>
+                                <a href="#">品牌直销<i></i></a>
+                                <a href="#">天天特卖<i></i></a>
+                                <a href="#">美白<i></i></a>
+                                <a href="#">祛痘遮瑕i></i></a>
+                                <a href="#">防晒<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>品牌选购</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">百雀羚</a></dd>
+                                    <dd><a href="#">水密码</a></dd>
+                                    <dd><a href="#">欧诗漫</a></dd>
+                                    <dd><a href="#">红地球</a></dd>
+                                    <dd><a href="#">欧莱雅</a></dd>
+                                    <dd><a href="#">妮维雅</a></dd>
+                                    <dd><a href="#">高夫</a></dd>
+                                    <dd><a href="#">相宜本草</a></dd>
+                                    <dd><a href="#">丹姿</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">手表、</a>
+                            <a href="#">箱包、</a>
+                            <a href="#">珠宝、</a>
+                            <a href="#">奢侈品</a>
+                            <div class="goods_detail_left">
+                                <a href="#">好物种草<i></i></a>
+                                <a href="#">热卖频道<i></i></a>
+                                <a href="#">项链专区<i></i></a>
+                                <a href="#">钻戒柜台<i></i></a>
+                                <a href="#">价格评估<i></i></a>
+                                <a href="#">珠宝选购<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>品牌直销</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">周大福</a></dd>
+                                    <dd><a href="#">老凤祥</a></dd>
+                                    <dd><a href="#">爱马仕</a></dd>
+                                    <dd><a href="#">劳力士</a></dd>
+                                    <dd><a href="#">天王</a></dd>
+                                    <dd><a href="#">卡地亚</a></dd>
+                                    <dd><a href="#">蒂芬妮</a></dd>
+                                    <dd><a href="#">周大生</a></dd>
+                                    <dd><a href="#">迪奥</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">运动户外、</a>
+                            <a href="#">鞋靴</a>
+                            <div class="goods_detail_left">
+                                <a href="#">大牌直供<i></i></a>
+                                <a href="#">零点开团<i></i></a>
+                                <a href="#">畅销榜<i></i></a>
+                                <a href="#">高尔夫专卖<i></i></a>
+                                <a href="#">运动配件<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>运动推荐</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">篮球</a></dd>
+                                    <dd><a href="#">足球</a></dd>
+                                    <dd><a href="#">排球</a></dd>
+                                    <dd><a href="#">羽毛球</a></dd>
+                                    <dd><a href="#">网球</a></dd>
+                                    <dd><a href="#">跑步</a></dd>
+                                    <dd><a href="#">跳远</a></dd>
+                                    <dd><a href="#">游泳</a></dd>
+                                    <dd><a href="#">骑行</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">汽车、</a>
+                            <a href="">汽车用品</a>
+                            <div class="goods_detail_left">
+                                <a href="#">高端品牌<i></i></a>
+                                <a href="#">优惠专享<i></i></a>
+                                <a href="#">省油<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>品牌推荐</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">大众</a></dd>
+                                    <dd><a href="#">奥迪</a></dd>
+                                    <dd><a href="#">奔驰</a></dd>
+                                    <dd><a href="#">宾利</a></dd>
+                                    <dd><a href="#">法拉利</a></dd>
+                                    <dd><a href="#">兰博基尼</a></dd>
+                                    <dd><a href="#">宝马</a></dd>
+                                    <dd><a href="#">夏利</a></dd>
+                                    <dd><a href="#">特斯拉</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">母婴、</a>
+                            <a href="#">玩具乐器</a>
+                            <div class="goods_detail_left">
+                                <a href="#">宝宝益智<i></i></a>
+                                <a href="#">亲子互动<i></i></a>
+                                <a href="#">音乐培养<i></i></a>
+                                <a href="#">智力开发<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>乐器选购</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">钢琴</a></dd>
+                                    <dd><a href="#">古筝</a></dd>
+                                    <dd><a href="#">小提琴</a></dd>
+                                    <dd><a href="#">萨克斯</a></dd>
+                                    <dd><a href="#">架子鼓</a></dd>
+                                    <dd><a href="#">吉他</a></dd>
+                                    <dd><a href="#">小号</a></dd>
+                                    <dd><a href="#">琵琶</a></dd>
+                                    <dd><a href="#">二胡</a></dd>
+                                    <dd><a href="#">电子琴</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">食品、</a>
+                            <a href="#">酒类、</a>
+                            <a href="#">生鲜、</a>
+                            <a href="#">特产</a>
+                            <div class="goods_detail_left">
+                                <a href="#">生鲜专区<i></i></a>
+                                <a href="#">盒马直营<i></i></a>
+                                <a href="#">免税专区<i></i></a>
+                                <a href="#">五月热卖<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>白酒选购</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">茅台</a></dd>
+                                    <dd><a href="#">五粮液</a></dd>
+                                    <dd><a href="#">剑南春</a></dd>
+                                    <dd><a href="#">习酒</a></dd>
+                                    <dd><a href="#">古井窖酒</a></dd>
+                                    <dd><a href="#">汾酒</a></dd>
+                                    <dd><a href="#">郎酒</a></dd>
+                                    <dd><a href="#">杏花村</a></dd>
+                                    <dd><a href="#">彩陶坊</a></dd>
+                                </dl>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">医药保健</a>
+                            <div class="goods_detail_left">
+                                <a href="#">家中常备<i></i></a>
+                                <a href="#">跌打损伤<i></i></a>
+                                <a href="#">外用<i></i></a>
+                                <a href="#">喷雾<i></i></a>
+                                <a href="#">不含酒精<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>家中必备</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">健胃消食片</a></dd>
+                                    <dd><a href="#">创可贴</a></dd>
+                                    <dd><a href="#">碘伏</a></dd>
+                                    <dd><a href="#">云南白药</a></dd>
+                                    <dd><a href="#">红花油</a></dd>
+                                    <dd><a href="#">清热去火</a></dd>
+                                    <dd><a href="#">感冒灵</a></dd>
+                                </dl>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">图书、</a>
+                            <a href="#">音像、</a>
+                            <a href="#">电子书</a>
+                            <div class="goods_detail_left">
+                                <a href="#">必读书籍<i></i></a>
+                                <a href="#">好书推荐<i></i></a>
+                                <a href="#">青春校园<i></i></a>
+                                <a href="#">最新专辑<i></i></a>
+                                <a href="#">Kindle<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>书籍推荐</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">月亮与六便士</a></dd>
+                                    <dd><a href="#">毛泽东传</a></dd>
+                                    <dd><a href="#">为什么是中国</a></dd>
+                                    <dd><a href="#">三国演义</a></dd>
+                                    <dd><a href="#">红楼梦</a></dd>
+                                    <dd><a href="#">二十四史</a></dd>
+                                    <dd><a href="#">钢铁是怎样炼成的</a></dd>
+                                    <dd><a href="#">老人与海</a></dd>
+                                </dl>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">彩票、</a>
+                            <a href="#">旅行、</a>
+                            <a href="#">充值、</a>
+                            <a href="#">票务</a>
+                            <div class="goods_detail_left">
+                                <a href="#">五月必去<i></i></a>
+                                <a href="#">旅行圣地<i></i></a>
+                                <a href="#">景点一览<i></i></a>
+                                <a href="#">附近交通<i></i></a>
+                                <a href="#">自驾路线<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>服务咨询</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">导游服务</a></dd>
+                                    <dd><a href="#">外钞兑换</a></dd>
+                                    <dd><a href="#">免税政策</a></dd>
+                                    <dd><a href="#">保险购买</a></dd>
+                                    <dd><a href="#">路线情况</a></dd>
+                                    <dd><a href="#">四川五日游</a></dd>
+                                    <dd><a href="#">内蒙草原七日游</a></dd>
+                                    <dd><a href="#">新疆异域风情双飞七日游</a></dd>
+                                </dl>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">理财、</a>
+                            <a href="#">众筹、</a>
+                            <a href="#">白条、</a>
+                            <a href="#">保险</a>
+                            <div class="goods_detail_left">
+                                <a href="#">理财产品<i></i></a>
+                                <a href="#">基金选购<i></i></a>
+                                <a href="#">保值产品<i></i></a>
+                                <a href="#">月月定期<i></i></a>
+                                <dl class="clearfix" style="display: block;">
+                                    <dt>产品推荐</dt>
+                                    <dd></dd>
+                                    <dd><a href="#">稳定优选</a></dd>
+                                    <dd><a href="#">年化翻倍</a></dd>
+                                    <dd><a href="#">三年稳涨</a></dd>
+                                    <dd><a href="#">随用随取</a></dd>
+                                    <dd><a href="#">定期投资</a></dd>
+                                </dl>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">二手</a></li>
+                    <li><a href="#">猜你喜欢</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- nav结束 -->
+
+    <!-- banner开始 -->
+    <div class="banner w" id="qwer">
+        <div class="main">
+            <div class="swiper">
+                <ul class="clearfix" id="swiper1">
+                    <li><a href="#"><img data-lazy-src="upload/focus.jpg" alt=""></a></li>
+                    <li><a href="#"><img data-lazy-src="upload/focus1.jpg" alt=""></a></li>
+                    <li><a href="#"><img data-lazy-src="upload/focus2.jpg" alt=""></a></li>
+                    <li><a href="#"><img data-lazy-src="upload/focus3.jpg" alt=""></a></li>
+					<li><a href="#"><img data-lazy-src="upload/focus.jpg" alt=""></a></li>
+                </ul>
+                <ol class="clearfix" id="circle"></ol>
+                <div class="arrow_left"></div>
+                <div class="arrow_right"></div>
+            </div>
+            <div class="newsflash">
+                <div class="newsflash_top">
+                    <h3>
+                        特惠秒杀
+                        <a href="#">更多<i></i></a>
+                    </h3>
+                    <div class="news_content">
+                        <ul>
+                            <li><a href="#">【特惠】Airpods限时5折秒！</a></li>
+                            <li><a href="#">【特惠】劳动节，好礼低至5折！</a></li>
+                            <li><a href="#">【特惠】特惠商品折上折！</a></li>
+                            <li><a href="#">【特惠】王嘉尔同款外套！</a></li>
+                            <li><a href="#">【特惠】小米11Ultra现货速抢!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="newsflash_center">
+                    <ul class="clearfix">
+                        <li>
+                            <div></div>
+                            <a href="#">话费</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">机票</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">电影</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">游戏</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">彩票</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">加油站</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">酒店</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">地铁</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">众筹</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">理财</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">银行卡</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">白条</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="newsflash_bottom">
+                    <a href="#"><img data-lazy-src="upload/bargain.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner结束 -->
+    <!-- 推荐模块开始 -->
+    <div class="recommend w">
+        <div class="recommend_title">
+            <i></i>
+            <p>今日推荐</p>
+        </div>
+        <div class="recommend_content">
+            <ul>
+                <li><a href="#"><img data-lazy-src="upload/pic00.jpg" alt=""></a>
+                    <div class="line"></div>
+                </li>
+                <li><a href="#"><img data-lazy-src="upload/pic01.jpg" alt=""></a>
+                    <div class="line"></div>
+                </li>
+                <li><a href="#"><img data-lazy-src="upload/pic02.jpg" alt=""></a>
+                    <div class="line"></div>
+                </li>
+                <li><a href="#"><img data-lazy-src="upload/pic03.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 推荐模块结束 -->
+
+    <!-- 楼层模块开始 -->
+    <div class="floor w">
+        <div class="floor_one one">
+            <div class="floor_one_title clearfix">
+                <h3>整点秒杀</h3>
+                <ul class="clearfix">
+                    <li><a href="#">热门</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">手机电脑</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">冷藏生鲜</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">厨房电器</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">个护健康</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">瓜果蔬菜</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">空气/净水</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">珠宝专柜</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">女装专区</a></li>
+                </ul>
+            </div>
+            <div class="floor_one_content clearfix">
+                <div class="floor_one_content_left">
+                    <div class="head">
+                        <ul class="clearfix">
+                            <li><a href="#">手机电脑</a></li>
+                            <li><a href="#">蓝牙耳机</a></li>
+                            <li><a href="#">风扇空调</a></li>
+                            <li><a href="#">家用电器</a></li>
+                            <li><a href="#">冰箱彩电</a></li>
+                            <li><a href="#">卫浴用品</a></li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <a href="#">
+                            <img data-lazy-src="upload/floor-1-1.png" alt="" class="tst">
+                        </a>
+                    </div>
+                </div>
+                <div class="floor_one_content_center">
+                    <a href="#"><img data-lazy-src="upload/pic1.jpg" alt="" class="tst"></a>
+                </div>
+                <div class="floor_one_content_right">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#"><img data-lazy-src="upload/floor-1-2.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-3.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img data-lazy-src="upload/floor-1-4.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img data-lazy-src="upload/floor-1-5.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-6.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 第二层楼 -->
+        <div class="floor_one two">
+            <div class="floor_one_title clearfix">
+                <h3>好物必备</h3>
+                <ul class="clearfix">
+                    <li><a href="#">热门</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">充电宝</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">电脑配件</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">运动装备</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">出行代步</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">应季电器</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">鞋帽箱包</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">厨卫电器</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">智能数码</a></li>
+                </ul>
+            </div>
+            <div class="floor_one_content clearfix">
+                <div class="floor_one_content_left">
+                    <div class="head">
+                        <ul class="clearfix">
+                            <li><a href="#">好物上新</a></li>
+                            <li><a href="#">大牌直降</a></li>
+                            <li><a href="#">新品秒杀</a></li>
+                            <li><a href="#">预售选购</a></li>
+                            <li><a href="#">折上加折</a></li>
+                            <li><a href="#">五一狂欢</a></li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <a href="#">
+                            <img data-lazy-src="upload/floor-1-01.png" alt="" class="tst">
+                        </a>
+                    </div>
+                </div>
+                <div class="floor_one_content_center">
+                    <a href="#"><img data-lazy-src="upload/pic001.jpg" alt="" class="tst"></a>
+                </div>
+                <div class="floor_one_content_right">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#"><img data-lazy-src="upload/floor-1-02.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-03.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img data-lazy-src="upload/floor-1-04.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img data-lazy-src="upload/floor-1-05.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-06.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 楼层模块结束 -->
+    <!-- footer开始 -->
+    <div class="footer">
+        <div class="w">
+            <div class="footer_top">
+                <ul class="clearfix">
+                    <li>
+                        <div></div>
+                        <p>正品保障</p>
+                        <span>正品保障，提供发票</span>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p>极速配送</p>
+                        <span>多仓直发，极速配送</span>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p>运输保险</p>
+                        <span>运输保险，件坏必偿</span>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p>品类齐全</p>
+                        <span>品类齐全，轻松购物</span>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p>有问必答</p>
+                        <span>客服在线，有问必答</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_center clearfix">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="#">上门自提</a></dd>
+                    <dd><a href="#">211限时达</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送费收取标准</a></dd>
+                    <dd><a href="#">海外配送</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                    <dd><a href="#">分期付款</a></dd>
+                    <dd><a href="#">公司转账</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">价格保护</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">返修/退换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="#">夺宝岛</a></dd>
+                    <dd><a href="#">DIY装机</a></dd>
+                    <dd><a href="#">延保服务</a></dd>
+                    <dd><a href="#">智能E卡</a></dd>
+                    <dd><a href="#">智能通信</a></dd>
+                    <dd><a href="#">智能服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <img src="upload/help.jpg" alt="">
+                    </dd>
+                    <dd>客户端</dd>
+                </dl>
+            </div>
+            <div class="footer_bottom">
+                <ul class="clearfix">
+                    <li><a href="#">关于我们</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">联系客服</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">商家入驻</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">营销中心</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">手机端</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">销售联盟</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">社区</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">公益</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+                <p>地址：河南省郑州市金水区金水东路136号 邮编：450018 电话：19500000000 传真：201820222 邮箱: 201820222@ncwu.com</p>
+                <p>京ICP备:2018202号 公安网备:201820222jm</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer结束 -->
+    <!-- 右侧边栏开始 -->
+    <div class="aside_right">
+        <ul class="clearfix">
+            <li><a href="javascript:void(0)">
+                    <p>今日秒杀</p>
+                </a></li>
+            <li><a href="javascript:void(0)">
+                    <p>特色优选</p>
+                </a></li>
+            <li><a href="javascript:void(0)">
+                    <p>为您推荐</p>
+                </a></li>
+				<!-- i是斜体设置 -->
+            <li><a href="javascript:void(0)"><i></i>
+                    <p>客服</p>
+                </a></li>
+            <li><a href="javascript:void(0)"><i></i>
+                    <p>反馈</p>
+                </a></li>
+            <li><a href="javascript:void(0)" id="backTop"><i></i>
+                    <p>顶部</p>
+                </a></li>
+        </ul>
+    </div>
+    <!-- 右侧边栏结束 -->
+    <script src="js/EasyLazyload.min.js"></script>
+</body>
+
+</html>
